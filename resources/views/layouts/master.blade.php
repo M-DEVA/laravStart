@@ -110,10 +110,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
          </li>
          @endcan
           <li class="nav-item">
-                <router-link to="/profile" class="nav-link">
-                    <i class="nav-icon fas fa-user orange"></i>
+                <router-link to="/Poxes" class="nav-link">
+                    <i class="nav-icon fas fa-user blue"></i>
                     <p>
-                        Profile
+                        Poxes
+                    </p>
+                </router-link>
+         </li>
+         <li class="nav-item">
+                <router-link to="/MyPoxes" class="nav-link">
+                    <i class="nav-icon fas fa-user blue"></i>
+                    <p>
+                        My Poxes
+                    </p>
+                </router-link>
+         </li>
+         <li class="nav-item">
+                <router-link to="/Settings" class="nav-link">
+                    <i class="nav-icon fas fa-user-cog blue"></i>
+                    <p>
+                        Settings
                     </p>
                 </router-link>
          </li>

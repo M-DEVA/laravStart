@@ -27,6 +27,7 @@
         "sweetalert2": "^7.26.12",
         "vform": "^1.0.0",
         "vue-progressbar": "^0.7.5",
-        "vue-router": "^3.0.1"
+        "vue-router": "^3.0.1",
+        "vue2-google-maps": "^0.10.7"
     }
 }

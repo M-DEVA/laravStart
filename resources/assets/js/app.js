@@ -11,6 +11,15 @@ window.Vue = require('vue');
 import moment from 'moment';
 import { Form, HasError, AlertError } from 'vform';
 
+
+import * as VueGoogleMaps from "vue2-google-maps";
+
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyBgVJDaHjxr_P59hB3XN8YEHdZYOTDiG58",
+  },
+});
+
 import Gate from "./Gate";
 Vue.prototype.$gate = new Gate(window.user);
 
@@ -45,11 +54,17 @@ Vue.use(VueProgressBar, {
     height: '3px'
   })
 
+
+
 let routes = [
     { path: '/dashboard', component: require('./components/Dashboard.vue') },
     { path: '/developer', component: require('./components/Developer.vue') },
     { path: '/users', component: require('./components/Users.vue') },
     { path: '/profile', component: require('./components/Profile.vue') },
+    { path: '/Poxes', component: require('./components/Poxes.vue') },
+    { path: '/MyPoxes', component: require('./components/MyPoxes.vue') },
+    { path: '/Settings', component: require('./components/Settings.vue') },
+
     { path: '*', component: require('./components/NotFound.vue') }
   ]
 
